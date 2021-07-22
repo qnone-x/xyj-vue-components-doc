@@ -3,6 +3,9 @@ const {fs, path} = require('@vuepress/shared-utils');
 module.exports = ctx => ({
   base:'/xyj-vue-components-doc/',
   dest: './dist',
+  markdown: {
+    lineNumbers: false // 代码块显示行号
+  },
   locales: {
     '/': {
       title: 'Qnone',
@@ -13,6 +16,8 @@ module.exports = ctx => ({
     ['link', {rel: 'icon', href: `/logo.png`}]
   ],
   themeConfig: {
+    sidebar: 'auto', // 侧边栏配置
+    sidebarDepth: 2, // 侧边栏显示2级
     editLinks: true,
     repo: 'vuejs/vuepress',
     docsDir: 'packages/docs/docs',

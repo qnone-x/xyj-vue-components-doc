@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "publish": "deploy.sh"
   },
   "dependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2"
